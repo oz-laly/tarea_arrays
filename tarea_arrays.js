@@ -3,7 +3,7 @@
 // Debes sacar el primer elemento (nombre del cliente), añadir "bebida" al inicio del array y añadir el nombre del cliente al final.
 function procesarPedido(pedido) {
     // Tu código aquí
-    const nombreDeCliente= pedido.shift()
+    const nombreDeCliente= pedido.shift("Larissa")
     pedido.unshift("Bebida");
     pedido.push("Larissa")
     return pedido;
@@ -58,10 +58,10 @@ function findJavaScript(matrix) {
        for(let j=0; j < matrix[i].length;j++){
         if(matrix[i] [j] === 'JavaScript'){
             return [i,j];
-        }
+        }  
        }
     }
-
+     return [-1,-1]
 }
 const matrix = [
     ['HTML', 'CSS', 'JavaScript'],
