@@ -3,9 +3,9 @@
 // Debes sacar el primer elemento (nombre del cliente), añadir "bebida" al inicio del array y añadir el nombre del cliente al final.
 function procesarPedido(pedido) {
     // Tu código aquí
-    const nombreDeCliente= pedido.shift("Larissa")
-    pedido.unshift("Bebida");
-    pedido.push("Larissa")
+    const nombreDeCliente= pedido.shift()
+    pedido.unshift("bebida");
+    pedido.push(nombreDeCliente)
     return pedido;
 }
 let pedido= ["Larissa", "Papas Fritas", "Lomito"]
